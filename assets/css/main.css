@@ -2256,11 +2256,11 @@ input, select, textarea {
 
 /* Highlights */
 
-	#highlights .highlight {
+	#projects .highlight {
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
+		#projects .highlight h3 {
 			color: #e97770;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
@@ -2540,7 +2540,7 @@ input, select, textarea {
 
 		/* Highlights */
 
-			#highlights .highlight {
+			#projects .highlight {
 				max-width: 40em;
 				margin-left: auto;
 				margin-right: auto;
