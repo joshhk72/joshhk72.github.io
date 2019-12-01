@@ -1082,6 +1082,7 @@ ul.actions {
   top: 0.75em; }
   .feature-list section {
     padding: 1em 2.5em;
+    padding-top: 0;
     position: relative; }
     .feature-list section i {
       display: block;
@@ -1577,7 +1578,8 @@ ul.actions {
   .feature-list {
     max-width: 40em; }
     .feature-list section {
-      padding: 1em 2.5em; }
+      padding: 1em 2.5em;
+      padding-top: 0; }
     .feature-list > .row > :first-child > section {
       border-top: 0;
       padding-top: 0; }
@@ -1598,7 +1600,7 @@ ul.actions {
   /* Footer */
   #footer .feature-list {
     border-top: solid 1px rgba(255, 255, 255, 0.05);
-    padding-top: 4em; } }
+    padding-top: 0; } }
   @media screen and (max-width: 980px) and (min-width: 737px) {
     #footer .feature-list > .row > :nth-child(2) > section {
       border-top: 0;
@@ -1794,7 +1796,8 @@ ul.actions {
         margin-top: 0; }
   /* Feature List */
   .feature-list section {
-    padding: 1em 2.5em; }
+    padding: 1em 2.5em;
+    padding-top: 0; }
   .feature-list h3:before {
     font-size: 0.9em; }
   /* Box */

@@ -593,6 +593,7 @@
 
 		section {
 			padding: 1em 2.5em;
+			padding-top: 0;
 			position: relative;
 			i {
 				display: block;
@@ -1298,6 +1299,7 @@
 
 				section {
 					padding: 1em 2.5em;
+					padding-top: 0;
 				}
 
 				> .row > :first-child > section {
@@ -1341,7 +1343,7 @@
 			#footer {
 				.feature-list {
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					padding-top: 4em;
+					padding-top: 0;
 
 					@include breakpoint('>small') {
 						> .row > :nth-child(2) > section {
@@ -1576,6 +1578,7 @@
 			.feature-list {
 				section {
 					padding: 1em 2.5em;
+					padding-top: 0;
 				}
 
 				h3 {
