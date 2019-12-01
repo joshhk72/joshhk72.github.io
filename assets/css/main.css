@@ -1096,6 +1096,20 @@ ul.actions {
       width: 75px;
       height: 75px;
       margin-bottom: 0.8em; }
+    .feature-list section .contact-links {
+      display: flex;
+      justify-content: space-around; }
+      .feature-list section .contact-links a:hover svg {
+        color: darkgray; }
+      .feature-list section .contact-links a:hover .angellist {
+        background-color: darkgray; }
+      .feature-list section .contact-links .contact-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0; }
+      .feature-list section .contact-links .angellist {
+        background-color: white;
+        border-radius: 25%; }
     .feature-list section label {
       text-align: center;
       display: block;
@@ -1574,12 +1588,19 @@ ul.actions {
   /* Form */
   form ul.actions {
     text-align: center; }
+    form ul.actions li {
+      display: block;
+      margin: 0 auto; }
+      form ul.actions li:first-of-type {
+        margin-bottom: 1.2em; }
   /* Feature List */
   .feature-list {
     max-width: 40em; }
     .feature-list section {
       padding: 1em 2.5em;
       padding-top: 0; }
+      .feature-list section .contact-links {
+        display: block; }
     .feature-list > .row > :first-child > section {
       border-top: 0;
       padding-top: 0; }
@@ -1597,14 +1618,12 @@ ul.actions {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto; }
-  /* Footer */
-  #footer .feature-list {
-    border-top: solid 1px rgba(255, 255, 255, 0.05);
+  /* Footer */ }
+
+@media screen and (max-width: 980px) and (min-width: 737px) {
+  #footer .feature-list > .row > :nth-child(2) > section {
+    border-top: 0;
     padding-top: 0; } }
-  @media screen and (max-width: 980px) and (min-width: 737px) {
-    #footer .feature-list > .row > :nth-child(2) > section {
-      border-top: 0;
-      padding-top: 0; } }
 
 @media screen and (max-width: 980px) {
   /* Nav */
@@ -1790,8 +1809,7 @@ ul.actions {
   ul.actions {
     margin: 2em 0 0 0; }
     ul.actions li {
-      margin: 15px 0 0 0;
-      display: block; }
+      margin: 15px 0 0 0; }
       ul.actions li:first-child {
         margin-top: 0; }
   /* Feature List */
