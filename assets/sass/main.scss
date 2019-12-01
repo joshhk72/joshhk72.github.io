@@ -192,7 +192,7 @@
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 /* Container */
@@ -592,10 +592,27 @@
 		top: 0.75em;
 
 		section {
-			border-top: solid 1px #eee;
-			padding-top: 3em;
-			padding-left: 5em;
+			padding: 1em 2.5em;
 			position: relative;
+			i {
+				display: block;
+				font-size: 72px;
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 0.15em;
+			}
+			svg {
+				display: block;
+				margin: 0 auto;
+				width: 75px;
+				height: 75px;
+				margin-bottom: 0.8em;
+			}
+			label {
+				text-align: center;
+				display: block;
+				font-size: 22px;
+			}
 		}
 
 		@include breakpoint('>medium') {
@@ -754,12 +771,12 @@
 		}
 
 		&.style1 {
-			background: #e97770 url('images/overlay.png');
+			background: #89d8be url('images/overlay.png');
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 
 			.title {
-				background: #e97770 url('images/overlay.png');
+				background: #89d8be url('images/overlay.png');
 				color: #fff;
 			}
 
@@ -899,6 +916,7 @@
 				&:hover {
 					> a {
 						color: #fff;
+						cursor: pointer;
 					}
 				}
 
@@ -966,9 +984,20 @@
 		padding-bottom: 8em;
 		text-align: center;
 
+		.container > img {
+			height: 300px;
+			width: 300px;
+			object-fit: cover;
+			border-radius: 50%;
+			margin-bottom: 1.5em;
+		}
+
 		p.style1 {
 			font-size: 1.5em;
 			letter-spacing: 0.075em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
 		}
 
 		p.style2 {
@@ -1268,7 +1297,7 @@
 				max-width: 40em;
 
 				section {
-					padding-top: 4em;
+					padding: 1em 2.5em;
 				}
 
 				> .row > :first-child > section {
@@ -1546,8 +1575,7 @@
 
 			.feature-list {
 				section {
-					padding-top: 2em;
-					padding-left: 4em;
+					padding: 1em 2.5em;
 				}
 
 				h3 {
