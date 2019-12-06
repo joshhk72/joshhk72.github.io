@@ -1594,6 +1594,9 @@ ul.actions {
   display: none; }
 
 @media screen and (max-width: 980px) {
+  #email-address::after {
+    content: "Link";
+    display: block; }
   /* Section/Article */
   header br {
     display: none; }
@@ -1921,3 +1924,13 @@ ul.actions {
         padding: 0; }
         #copyright ul li:first-child {
           margin-top: 0; } }
+
+@media screen and (max-width: 980px) {
+  #email-address::after {
+    content: "Link";
+    display: block; } }
+
+@media screen and (min-width: 981px) {
+  #email-address::after {
+    content: "joshhk72@gmail.com";
+    display: block; } }

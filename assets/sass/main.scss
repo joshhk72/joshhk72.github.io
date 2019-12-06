@@ -1314,6 +1314,13 @@
 
 	@include breakpoint('<=medium') {
 
+			#email-address {
+				&::after{ 
+					content: "Link";
+					display: block;
+				}
+			}
+
 		/* Section/Article */
 
 			header {
@@ -1797,3 +1804,25 @@
 				}
 			}
 	}
+
+	// emails
+
+		@include breakpoint('<=medium') {
+
+			#email-address {
+				&::after{ 
+					content: "Link";
+					display: block;
+				}
+			}
+		}
+
+		@include breakpoint('>medium') {
+
+			#email-address {
+				&::after{ 
+					content: "joshhk72@gmail.com";
+					display: block;
+				}
+			}
+		}
