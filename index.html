@@ -25,8 +25,16 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1>Hey there! I'm Josh Kim!</h1>
-							<p>I'm a software engineer.</p>
+							<div id="typed-h1">
+								<p>Hello!^700</p>
+								<p>Hey there!^400 I'm Josh Kim!</p>
+							</div>
+							<h1><span id="typed1"></span></h1>
+							<div id="typed-engineer">
+								<p>Welcome to my portfolio.^800</p>
+								<p>I'm a software engineer.^800</p>
+							</div>
+							<p><span id="typed2"></span></p>
 						</div>
 
 					<!-- Nav -->
@@ -80,97 +88,97 @@
 								<div class="feature-list">
 									<div class="row">
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-ruby-plain colored"></i>
 												<label>Ruby</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-javascript-plain colored"></i>
 												<label>JavaScript</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-rails-plain colored"></i>
 												<label>Rails</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-react-original colored"></i>
 												<label>React</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<span class="iconify" style="color:#7749BD;height:72px;"data-icon="simple-icons:redux" data-inline="false"></span>
 												<label>Redux</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<span class="iconify" style="color:#e535ab;height:72px;" data-icon="simple-icons:graphql" data-inline="false"></span>
 												<label>GraphQL</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-nodejs-plain colored"></i>
 												<label>Node.js</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-mongodb-plain colored"></i>
 												<label>MongoDB</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-postgresql-plain colored"></i>
 												<label>PostgreSQL</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-html5-plain colored"></i>
 												<label>HTML</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-css3-plain colored"></i>
 												<label>CSS</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-sass-original colored"></i>
 												<label>Sass</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-git-plain colored"></i>
 												<label>Git</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-docker-plain colored"></i>
 												<label>Docker</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<i class="devicon-amazonwebservices-original colored"></i>
 												<label>AWS</label>
 											</section>
 										</div>
 										<div class="col-3 col-6-medium">
-											<section>
+											<section class="skill-icon">
 												<svg class="devicon" style="height:72px;" viewBox="0 0 29.591 26.727">
 													<defs>
 														<linearGradient gradientUnits="userSpaceOnUse" y2="334.44583" x2="514.85358" y1="135.04791" x1="571.25574"
@@ -336,12 +344,27 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.appear.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/scroll.js"></script>
 			<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+			<!-- typed.js -->
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+			<script>
+				var typed1 = new Typed('#typed1', {
+					stringsElement: '#typed-h1',
+					typeSpeed: 60,
+					smartBackspace: true,
+				});
+				var typed2 = new Typed('#typed2', {
+					stringsElement: '#typed-engineer',
+					typeSpeed: 75,
+					loop: true,
+				});				
+			</script>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154160006-1"></script>
 			<script>
