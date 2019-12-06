@@ -23,6 +23,21 @@
 				$body.removeClass('is-preload');
 			}, 100);
 
+			const ff = new Freezeframe();
+			setTimeout(function() {
+				$(".ff-container").addClass("ff-ready");
+				$(".ff-container").addClass("ff-inactive");
+				$(".ff-container").removeClass("ff-loading-icon");
+				$(".ff-container").mouseenter(function(e) {
+					$(e.delegateTarget).removeClass("ff-inactive");
+					$(e.delegateTarget).addClass("ff-active");
+				})
+				$(".ff-container").mouseleave(function (e) {
+					$(e.delegateTarget).addClass("ff-inactive");
+					$(e.delegateTarget).removeClass("ff-active");
+				})
+			}, 100);
+
 			$('#appear-mark').appear(function() {
 				var time = 100;
 				$('.skill-icon').each(function(idx, ele) {
