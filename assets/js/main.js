@@ -22,6 +22,16 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+
+			$('#appear-mark').appear(function() {
+				var time = 100;
+				$('.skill-icon').each(function(idx, ele) {
+					setTimeout(function() {
+						$(ele).animate({ opacity: 1 }, 700);
+					}, time)
+					time += 50;
+				})
+			})
 		});
 
 	// Nav.
