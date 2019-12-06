@@ -806,7 +806,17 @@
 				color: #fff;
 			}
 		}
-
+		
+		&#what {
+			background: rgb(230, 205, 230);
+			p {
+				color: rgb(100, 93, 93);
+				margin: 0 auto;
+				font-size: 1.1em;
+				width: 85%;
+			}
+		}
+		
 		&.style2 {
 			background: #fff;
 
@@ -822,6 +832,9 @@
 			.title {
 				background: #f3f3f3 url('images/overlay.png');
 				color: #484d55;
+				&#what-title {
+					background: #e6cde6;
+				}
 			}
 
 			.image {
@@ -1019,7 +1032,7 @@
 			letter-spacing: 0.075em;
 			margin-left: auto;
 			margin-right: auto;
-			width: 80%;
+			width: 88%;
 		}
 
 		p.style2 {
