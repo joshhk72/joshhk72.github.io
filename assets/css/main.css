@@ -1444,7 +1444,7 @@ ul.actions {
 
 /* Projects */
 #projects .highlight {
-  text-align: center; }
+  text-align: left; }
   #projects .highlight h3 {
     color: #e97770;
     margin: 0 0 0.75em 0;
